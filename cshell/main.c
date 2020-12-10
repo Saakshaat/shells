@@ -25,7 +25,7 @@ int main() {
 			interpretExpression(input, 3); // parsing, evaluation and execution will occure elsewhere
 		}
 
-		printf("cshell>"); // a nicer prompt should replace this since `printf()` takes up memory itself
+		printf("cshell$ "); // a nicer prompt should replace this since `printf()` takes up memory itself
 		scanf("%s", input); // a helper in another file will replace this and take care of parsing the entire line
 
 	} while(input[0] != '\0' || input[0] != '\n' || strcmp(input,"^C") != 0 || strcmp(input,"^D") != 0); // FIXME: change to valid checks
