@@ -3,5 +3,5 @@
 
 int interpretExpression(char *exp, int val)
 { // filler for actual function
-    return printf("Expression: %s and Value: %d are not being parsed currently!", exp, val);
+    return printf("Expression: %s and Value: %d are not being parsed currently!\n", exp, val);
 }
