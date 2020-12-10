@@ -13,7 +13,10 @@ While my gaol is to get some low-level code going, I'm also trying to add some a
 
 ### Running shell in C
 - `cd cshell`
-- `gcc *.c -o shell`
-  - This command compiles all `.c` files in the directory and creates an executable file: `shell`
+- Compiling
+  - `make`
+    - This uses a `Makefile` to compile all `.c` files in the directory and create an executable named `shell` 
+  - Alternatively you can complile the files yourself with `gcc *.c -o shell`
+    - This command compiles all `.c` files in the directory and creates an executable file: `shell`
 - `./shell`
   - This command runs the executable file (`shell`) created in the previous command
