@@ -13,7 +13,7 @@ int getTerminalWidth(void)
     return w.ws_col;
 }
 
-char* appendPipe(char* text) {
+char* appendPipes(char* text) {
     char* finalString = malloc(strlen(text) + 2);
 
     finalString[0] = '|';
@@ -54,8 +54,13 @@ void welcomeScreen() {
     printf("%s\n", fitPatternToWidth(terminalWidth));
     printf("%s\n", centerTextInPattern("", terminalWidth));
     printf("%s\n", centerTextInPattern("", terminalWidth));
-    printf("%s\n", centerTextInPattern("//WELCOME TO CSHELL\\\\", terminalWidth));
-    printf("%s\n", centerTextInPattern("", terminalWidth));
+    printf("%s\n", centerTextInPattern("--", terminalWidth));
+    printf("%s\n", centerTextInPattern("/    \\", terminalWidth));
+    printf("%s\n", centerTextInPattern("|      |", terminalWidth));
+    printf("%s\n", centerTextInPattern("|CSHELL|", terminalWidth));
+    printf("%s\n", centerTextInPattern("|      |", terminalWidth));
+    printf("%s\n", centerTextInPattern("\\    /", terminalWidth));
+    printf("%s\n", centerTextInPattern("--", terminalWidth));
     printf("%s\n", centerTextInPattern("", terminalWidth));
     printf("%s\n", centerTextInPattern("**SAAKSHAAT SINGH**", terminalWidth));
     printf("%s\n", centerTextInPattern("", terminalWidth));
