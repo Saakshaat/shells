@@ -2,7 +2,12 @@
 #include<stdlib.h>
 #include<string.h>
 
+#include "display.h"
 #include "interpret.h"
+
+void init() {
+	welcomeScreen();
+}
 
 int main() {
 	/**
@@ -15,7 +20,7 @@ int main() {
 	 * 6. Repeat
 	 * 
 	 */
-	printf("Welcome to cshell!\n"); // a function writing welcome to the console will replace this
+	init();
 
 	// user input - this variable will be removed from the driver
 	char * input;
