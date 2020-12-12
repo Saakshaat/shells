@@ -31,8 +31,6 @@ char* centerTextInPattern(char* text, int terminalWidth) {
         char *leftPaddedStr = calloc(strlen(text) + pad + 1, sizeof(char));
         memset(leftPaddedStr, ' ', pad);
         strncpy(leftPaddedStr+pad, text, strlen(text));
-        
-        free(leftPaddedStr);
 
         return appendPipes(leftPaddedStr);
 }
@@ -67,10 +65,4 @@ void welcomeScreen() {
     printf("%s\n", centerTextInPattern("", terminalWidth));
     printf("%s\n", fitPatternToWidth(terminalWidth));
     printf("%s", "\n");
-
-}
-
-// TODO: implement
-char* getPrompt() {
-    return NULL;
 }
