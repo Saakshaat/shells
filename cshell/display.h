@@ -3,5 +3,7 @@
 #include <stdio.h>
 
 void welcomeScreen();
+char* getCurrentDirectory();
+char* getConsolePrompt();
 
 #endif
