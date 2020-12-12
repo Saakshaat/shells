@@ -30,7 +30,11 @@ char *getConsolePrompt()
     return promptStr;
 }
 
-char *getUserInput()
+char* getUserInput()
 {
-    return NULL;
+    size_t bufsize = 1024;
+    char* buffer = malloc(bufsize);
+    getline(&buffer, &bufsize, stdin);
+
+    return buffer;
 }
