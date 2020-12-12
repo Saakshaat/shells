@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include "interpret.h"
 
-int interpretExpression(char *exp, int val)
-{ // filler for actual function
-    return printf("Expression: %s and Value: %d are not being parsed currently!\n", exp, val);
+void evalDriver(char *inputLine)
+{
+    printf("Expression: %s is not being parsed currently!\n", inputLine);
+    return NULL;
 }

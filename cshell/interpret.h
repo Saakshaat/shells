@@ -1,6 +1,6 @@
 #ifndef INTERPRET_H
 #define INTERPRET_H
 
-int interpretExpression(char* exp, int val);
+void evalDriver(char* inputLine);
 
 #endif
