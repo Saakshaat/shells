@@ -3,7 +3,7 @@
 #include <string.h>
 
 #include "display.h"
-#include "interpret.h"
+#include "evaluate.h"
 #include "input.h"
 
 void init()

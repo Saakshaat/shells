@@ -1,8 +1,11 @@
 #include <stdio.h>
-#include "interpret.h"
+#include "evaluate.h"
 
-void evalDriver(char *inputLine)
+
+
+int evalDriver(char *inputLine)
 {
     printf("Expression: %s is not being parsed currently!\n", inputLine);
-    return NULL;
+
+    return 0;
 }
