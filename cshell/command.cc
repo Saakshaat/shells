@@ -130,7 +130,7 @@ void Command::execute() {
   // print out Command Table
   print();  
 
-  int ret;
+  int status;
 
   for(int i = 0; i < _numberOfAtomicCommands; i++) {
 
